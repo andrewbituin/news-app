@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Route exact path='/home' component={Home} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/about' />
+        <Route exact path='/user' />
       </div>
     );
   }

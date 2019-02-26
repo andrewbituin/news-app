@@ -1,5 +1,6 @@
 import React from "react";
 import "./Headlines.css";
+import uuid from 'uuid';
 export default class Headlines extends React.Component {
   state = {
     articles: [],
@@ -18,10 +19,11 @@ export default class Headlines extends React.Component {
   }
   //Display only 6 headlines at a time
   // On the click of button, rotate to next section of headlines
+
   displayHeadlines = () => {
     return this.state.articles.map(article => {
       return (
-        <li className="headline">
+        <li className="headline" key={uuid()}>
           <h3>{article.title}</h3>
           <p>{article.author ? `author: ${article.author}` : ""}</p>
           <p>{article.description}</p>
@@ -29,6 +31,7 @@ export default class Headlines extends React.Component {
       );
     });
   };
+
   render() {
     return (
       <div>
