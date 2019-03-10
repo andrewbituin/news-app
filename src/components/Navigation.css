@@ -1,0 +1,17 @@
+.navigation{
+    height: 50px;
+    border: 2px solid black;
+    float: unset;
+    width: 100%;
+}
+.home-button{
+    margin: 5px;
+}
+.register-button{
+    float: right;
+    margin: 5px;
+}
+.login-button{
+    float: right;
+    margin: 5px;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router";
-import Home from "./Home";
+import Home from "./components/Home";
 
 class App extends Component {
   render() {
